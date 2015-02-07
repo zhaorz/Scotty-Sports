@@ -15,7 +15,7 @@ import QuartzCore
 
 
 
-class ViewController: UIViewController, FBLoginViewDelegate, UIPickerViewDelegate{
+class ViewController: UIViewController, FBLoginViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate{
 
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
@@ -65,10 +65,50 @@ class ViewController: UIViewController, FBLoginViewDelegate, UIPickerViewDelegat
 
     }
 
-
-   //CREATE NEW GAME
-    //sports = ["football", "soccer", "basektball", "frisbee", "squash", "running", "tennis", "baseball", "golf"]
+    //Create new game WITH SCROLL BAR
+    var sports = ["football", "soccer", "basketball", "frisbee", "squash", "running", "tennis", "baseball",
+        "golf", "yoga"]
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return sports.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return sports[row]
+    }
+    
+    
+    
+    //create a game
+    func createAGame(sport:String, location:String, time: String, numberOfPlayers: Int) -> Void {
+        var newGame = PFObject(className: "games")
+        newGame["sports"] = sport
+        newGame["location"] = location
+        newGame["time"] = time
+        newGame["maxPlayers"] = numberOfPlayers
+        newGame.saveInBackgroundWithTarget(nil, selector: nil)
+    }
+    
+    //Create new page
+    @IBOutlet weak var sportName: UITextField!
+    @IBOutlet weak var locationName: UITextField!
+    @IBOutlet weak var selectedTime: UIDatePicker!
+    @IBOutlet weak var numberPlayers: UITextField!
+    
+    @IBAction func submitNewGame(sender: AnyObject) {
+        var sportName1 = sportName as NSString!
+        createAGame(sportName as NSString, location: locationName as NSString, time: selectedTime as NSString, numberOfPlayers: numberPlayers as Int)
+    }
+    
+    
+    
+    func hello() ->Void {
+        createAGame("a",location: "a",time: "a", numberOfPlayers: 1)
+    }
     
     
     
