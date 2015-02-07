@@ -45,7 +45,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Games" id="vvr-fu-ICs">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" id="gKq-Y7-HIY"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="9rF-Br-gDt">
+                            <connections>
+                                <segue destination="iHl-kR-XZH" kind="modal" id="45R-gw-3Tu"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="gKq-Y7-HIY">
+                            <connections>
+                                <segue destination="cQs-Te-2si" kind="modal" id="w6C-jx-QbT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12m-6J-eUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,6 +77,9 @@
                                     <color key="titleColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="u4J-NZ-Bat" kind="modal" id="0UF-rW-Ogn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -189,7 +201,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Select Sports" id="1iA-Q6-BAd">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jzd-NS-rtO"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jzd-NS-rtO">
+                            <connections>
+                                <segue destination="u4J-NZ-Bat" kind="modal" id="3ji-mG-NiX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV2-pn-bpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,5 +304,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="0UF-rW-Ogn"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
