@@ -21,10 +21,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("A7oc3dFefYXiqL1j3k31GdcUDujbrddA43Z4BKF9", clientKey: "pjY9FAF9HhoXc0iJwHfhlB9jwuCrp28SXZxAXlL6")
         
         //KYANGCOMMENT: below is syntax for adding a basic object
+        
         var object = PFObject(className: "users")
-        object.addObject("usernameHere", forKey: "derpz")
-        //object.saveInBackgroundWithTarget(nil , selector: nil)
-        object.saveInBackgroundWithBlock { //this lets us do something once it finishes
+        object.addObject("usernameHere", forKey: "usernames")
+        object.saveInBackgroundWithTarget(nil , selector: nil)
+        
+        /*
+        KYANGCOMMENT: below is syntax for getting the objectId right after saving
+        Later, we want to store this id in NSUserDefaults (local storage)
+        For now, if you want a specific id, look at our parse webpage
+        
+        var object1 = PFObject(className: "users")
+        object.saveInBackgroundWithBlock { //lets us do something once it finishes background task
             (success: Bool, error: NSError!) -> Void in
             if (success) {
                 let objectId = object.objectId
@@ -34,7 +42,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 println("There was a problem updating") //hopefully this won't happen lol
             }
         }
-        //var query = PFQuery(className: "users")
+        */
+        
+        var query = PFQuery(className: "users")
+        query.getObjectInBackgroundWithId("II0mOILf8w") {
+            (
+        }
         
         // Override point for customization after application launch.
         return true
