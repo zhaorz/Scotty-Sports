@@ -20,34 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.setApplicationId("A7oc3dFefYXiqL1j3k31GdcUDujbrddA43Z4BKF9", clientKey: "pjY9FAF9HhoXc0iJwHfhlB9jwuCrp28SXZxAXlL6")
         
-        //KYANGCOMMENT: below is syntax for adding a basic object
-        
-        //var object = PFObject(className: "users")
-        //object.addObject("usernameHere", forKey: "usernames")
-        //object.saveInBackgroundWithTarget(nil , selector: nil)
-        
-        /*
-        KYANGCOMMENT: below is syntax for getting the objectId right after saving
-        Later, we want to store this id in NSUserDefaults (local storage)
-        For now, if you want a specific id, look at our parse webpage
-        
-        var object1 = PFObject(className: "users")
-        object.saveInBackgroundWithBlock { //lets us do something once it finishes background task
-            (success: Bool, error: NSError!) -> Void in
-            if (success) {
-                let objectId = object.objectId
-                println(objectId)
-            }
-            else {
-                println("There was a problem updating") //hopefully this won't happen lol
-            }
-        }
-        */
-        
-
-        
-        // Override point for customization after application launch.
-        
         // Facebook API
         FBLoginView.self
         FBProfilePictureView.self

@@ -12,6 +12,8 @@
 	<dict>
 		<key>40D04C1B689A425BDE9F934054363AD9826AC4B1</key>
 		<string>github.com:zhaorz/Scotty-Sports.git</string>
+		<key>E2CAAA491E1935394B37AA2DE7F6829BCCCB8BD5</key>
+		<string>https://github.com/zhaorz/Scotty-Sports.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ScottySports.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>40D04C1B689A425BDE9F934054363AD9826AC4B1</key>
 		<string>../..</string>
+		<key>E2CAAA491E1935394B37AA2DE7F6829BCCCB8BD5</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:zhaorz/Scotty-Sports.git</string>
@@ -28,6 +32,14 @@
 	<string>40D04C1B689A425BDE9F934054363AD9826AC4B1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E2CAAA491E1935394B37AA2DE7F6829BCCCB8BD5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

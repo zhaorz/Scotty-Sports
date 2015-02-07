@@ -13,10 +13,10 @@
 import UIKit
 import QuartzCore
 
-
+let defaults = NSUserDefaults.standardUserDefaults()
 
 class ViewController: UIViewController, FBLoginViewDelegate {  
-
+    
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
 
@@ -115,42 +115,109 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         return returnString
     }
     
-    func findGames(sport: String) -> [String] {
+    func deleteFavoriteSport(userObjectId: String, sport: String) -> Void {
+        var query = PFQuery(className: "games")
+        query.getObjectInBackgroundWithId(userObjectId) {
+            (userObject: PFObject!, error: NSError!) -> Void in
+            if error == nil {
+                var listOfSports = userObject["favoriteSports"] as NSArray
+                var returnList = listOfSports as Array
+                var count = 0
+                for i in listOfSports {
+                    if listOfSports[count] as NSString == sport {
+                        returnList.removeAtIndex(count)
+                    count += 1
+                    }
+                }
+                userObject["favoriteSports"] = returnList
+                userObject.saveInBackgroundWithTarget(nil, selector: nil)
+                }
+            }
+        }
+    
+    func findGames(sport: String) -> [[String]] {
     //return list of gameIDs with selected sport
-        var gameIDList: [String] = []
+        var gameIDList: [[String]] = []
         var gameQuery = PFQuery(className: "games")
-        var tester: String
-        var dictionary: [String:String]
+        var gameList: [String] = ["","","","","",""]
+        for i in gameQuery.findObjects()
+        {
+            //println("The ith output is \(i)")
+            println(i.objectId)
+            println(i.objectForKey("sport") as NSString)
+            if i.objectForKey("sport") as NSString == "Basketball" {
+                gameList[0] = i.objectId
+                gameList[1] = i.objectForKey("sport") as NSString
+                gameList[2] = i.objectForKey("location") as NSString
+                gameList[3] = i.objectForKey("time") as NSString
+                gameList[4] = i.objectForKey("playerCount") as NSString
+                gameList[5] = i.objectForKey("maxPlayers") as NSString
+                gameIDList.append(gameList)
+                println("added \(i.objectId)!")
+            }
+            
+        }
         return gameIDList
     }
     
     
     func createAGame(sport: String, location: String, time: String, numberOfPlayers: Int) -> Void {
         var newGame = PFObject(className: "games")
+        var userID = defaults.stringForKey("userID")
+        //let userID = "/889558237733909/"
+        var currentPlayersList: [String] = []
+        currentPlayersList.append(userID as String!)
+        newGame["currentPlayers"] = currentPlayersList
         newGame["sport"] = sport
         newGame["location"] = location
         newGame["time"] = time
-        newGame["numberOfPlayers"] = numberOfPlayers
+        newGame["maxPlayers"] = numberOfPlayers
         newGame.saveInBackgroundWithTarget(nil, selector: nil)
     }
     
+    func checkIfUserExists(userId: String) -> Bool {
+        
+        var query = PFQuery(className: "users")
+        var stringTester: String = ""
+        if let checkUserID = defaults.stringForKey("userID") {
+            if let checkObjectID = defaults.stringForKey("userObjectID") {
+                return true
+        }
+        }
+        return false}
+    
+    func createUser(userId: String) -> Void {
+        var newUser = PFObject(className: "users")
+        var emptyStringList: [String] = []
+        var emptyStringList2: [String] = []
+        newUser["username"] = userId
+        if let checkObjectID = defaults.stringForKey("userObjectID") {}
+        else {defaults.setObject(newUser.objectId, forKey: "userObjectID")}
+        newUser.saveInBackgroundWithTarget(nil, selector: nil)
+    }
+    
     func storeUserDataOnServer(userURL : String) {
-        let userID = getIDFromURL(userURL)
+        var doesUserExist = false
+        let userID = getIDFromURL(userURL) as NSString
+        if let storeUserID = defaults.stringForKey("userID") {}
+        else {defaults.setObject(userID,forKey:"userID")}
+        
+        doesUserExist = checkIfUserExists(userID)
+        if !doesUserExist {
+            createUser(userID)
+        }
         var query = PFQuery(className:"users")
-        query.getObjectInBackgroundWithId("yEBwUTeJD1") {
+        let userObjectID = defaults.stringForKey("userObjectID")
+        //let userObjectID = "yEBwUTeJD1"
+        query.getObjectInBackgroundWithId(userObjectID) {
             (gameScore: PFObject!, error: NSError!) -> Void in
             if error != nil {
                 NSLog("%@", error)
             } else {
                 gameScore["usernames"] = userID
-                for key in gameScore.dictionaryWithValuesForKeys(["usernames"]) {
-                    println(key.0)
-                }
                 gameScore.saveInBackgroundWithTarget(nil, selector: nil)
             }
         }
-        //findGames("Basketball")
-        //createAGame("Basketball",location: "Wiegand",time: "20:30",numberOfPlayers: 5)
         }
     
     
