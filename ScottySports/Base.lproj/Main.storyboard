@@ -5,36 +5,50 @@
     </dependencies>
     <scenes>
         <!--Games-->
-        <scene sceneID="s1n-oA-YBR">
+        <scene sceneID="UcC-PL-lLu">
             <objects>
-                <viewController id="kP8-JV-NAC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DMK-1e-FX8">
+                <tableViewController id="pjb-bE-JFg" customClass="GamesViewController" customModule="ScottySports" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="AU2-jp-Zsp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4ZS-qu-kLn">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem systemItem="add" id="FMT-g8-6xB">
-                                        <connections>
-                                            <segue destination="iHl-kR-XZH" kind="modal" id="I2i-H1-dw7"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Games" id="IZO-UD-TLg">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" id="1CP-Dj-Rtm">
-                            <connections>
-                                <segue destination="cQs-Te-2si" kind="modal" id="36l-Ns-D03"/>
-                            </connections>
-                        </barButtonItem>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="GameCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GameCell" rowHeight="55" id="goa-jb-kD3" customClass="GameCell" customModule="ScottySports" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="goa-jb-kD3" id="kjQ-RX-m5B">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VYe-5u-C4C">
+                                            <rect key="frame" x="30" y="7" width="179" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QSQ-AT-vEg">
+                                            <rect key="frame" x="30" y="28" width="49" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationLabel" destination="QSQ-AT-vEg" id="CsQ-cP-Hoj"/>
+                                    <outlet property="sportLabel" destination="VYe-5u-C4C" id="gaH-21-f3x"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pjb-bE-JFg" id="CjE-N4-ws4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Games" id="vvr-fu-ICs">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="gKq-Y7-HIY"/>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dLH-35-cfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12m-6J-eUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="732" y="191"/>
         </scene>
@@ -54,9 +68,6 @@
                                     <color key="titleColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="E7o-qW-WHp" kind="modal" id="YdN-3o-ak5"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,11 +189,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Select Sports" id="1iA-Q6-BAd">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jzd-NS-rtO">
-                            <connections>
-                                <segue destination="E7o-qW-WHp" kind="modal" id="MOx-E6-RcT"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jzd-NS-rtO"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV2-pn-bpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,30 +221,12 @@
                     </view>
                     <connections>
                         <outlet property="fbLoginView" destination="WRz-mM-aCN" id="0rl-ZG-x1o"/>
-                        <segue destination="E7o-qW-WHp" kind="modal" identifier="loginSegue" id="1SY-vk-Wej"/>
+                        <segue destination="u4J-NZ-Bat" kind="modal" identifier="loginSegue" id="44Z-ED-Z7a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPH-Dl-4Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-182" y="191"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ojf-AY-Yos">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E7o-qW-WHp" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JW1-Re-Tty">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="kP8-JV-NAC" kind="relationship" relationship="rootViewController" id="z8i-kj-agQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ivS-cP-haZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="292" y="191"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QC0-MG-fYE">
@@ -275,14 +264,29 @@
             </objects>
             <point key="canvasLocation" x="732" y="881"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kr9-HN-vGr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u4J-NZ-Bat" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qaM-7Y-Msv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pjb-bE-JFg" kind="relationship" relationship="rootViewController" id="FHt-RI-js8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7h-hb-b6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="191"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="YdN-3o-ak5"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
