@@ -13,7 +13,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+//PAGE 3
+    
+    @IBOutlet weak var usernameInput: UITextField!
+    
+    @IBAction func submitUsername(sender: AnyObject) {
+        var object1 = PFObject(className: "users")
+        object1.addObject(usernameInput.text, forKey: "name")
+        object1.saveInBackgroundWithTarget(nil , selector: nil)
 
+    }
+//PAGE 2
 
 @IBAction func Running(sender: AnyObject) {
 }
@@ -49,6 +59,7 @@ var object1 = PFObject(className: "users")
 
 }
 
+//PAGE 3
 
 
     override func viewDidLoad() {
