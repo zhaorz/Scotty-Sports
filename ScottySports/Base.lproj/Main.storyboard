@@ -137,13 +137,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="151"/>
+            <point key="canvasLocation" x="1066" y="202"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="s1n-oA-YBR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dLH-35-cfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="kP8-JV-NAC" sceneMemberID="viewController">
+                <viewController id="kP8-JV-NAC" customClass="ViewController" customModule="ScottySports" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jkQ-Oo-g3c"/>
                         <viewControllerLayoutGuide type="bottom" id="kBo-dd-RWA"/>
@@ -192,8 +191,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="IZO-UD-TLg"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLH-35-cfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="214"/>
+            <point key="canvasLocation" x="628" y="1058"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PCe-rR-NQK">
@@ -385,7 +385,7 @@
                     </view>
                     <connections>
                         <outlet property="fbLoginView" destination="WRz-mM-aCN" id="0rl-ZG-x1o"/>
-                        <segue destination="kP8-JV-NAC" kind="presentation" identifier="segue" id="1SY-vk-Wej"/>
+                        <segue destination="kP8-JV-NAC" kind="presentation" identifier="segue1-2" id="1SY-vk-Wej"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPH-Dl-4Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
