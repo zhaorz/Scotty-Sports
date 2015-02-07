@@ -14,7 +14,8 @@ import UIKit
 import QuartzCore
 
 
-class ViewController: UIViewController, FBLoginViewDelegate {
+
+class ViewController: UIViewController, FBLoginViewDelegate {  
 
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
@@ -94,6 +95,36 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         performSegueWithIdentifier("segue1-2", sender: self)
         
     }
+    
+    
+    func createAGame(sport: String, location: String, time: String, numberOfPlayers: Int) -> Void {
+        var newGame = PFObject(className: "games")
+        newGame["sport"] = sport
+        newGame["location"] = location
+        newGame["time"] = time
+        newGame["numberOfPlayers"] = numberOfPlayers
+        newGame.saveInBackgroundWithTarget(nil, selector: nil)
+    }
+    
+    func storeUserDataOnServer(userURL : String) {
+        let userID = getIDFromURL(userURL)
+        var query = PFQuery(className:"users")
+        query.getObjectInBackgroundWithId("yEBwUTeJD1") {
+            (gameScore: PFObject!, error: NSError!) -> Void in
+            if error != nil {
+                NSLog("%@", error)
+            } else {
+                gameScore["usernames"] = userID
+                for key in gameScore.dictionaryWithValuesForKeys(["usernames"]) {
+                    println(key.0)
+                }
+                gameScore.saveInBackgroundWithTarget(nil, selector: nil)
+            }
+        }
+        //findGames("Basketball")
+        //createAGame("Basketball",location: "Wiegand",time: "20:30",numberOfPlayers: 5)
+        }
+    
     
     func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
         println("User Logged Out")
