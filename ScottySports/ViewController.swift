@@ -15,15 +15,6 @@ import UIKit
 class ViewController: UIViewController, FBLoginViewDelegate {
 //PAGE 3
     
-    @IBOutlet weak var usernameInput: UITextField!
-    
-    @IBAction func submitUsername(sender: AnyObject) {
-        var object1 = PFObject(className: "users")
-        object1.addObject(usernameInput.text, forKey: "name")
-        object1.saveInBackgroundWithTarget(nil , selector: nil)
-
-    }
-    
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
 
