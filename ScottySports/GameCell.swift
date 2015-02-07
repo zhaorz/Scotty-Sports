@@ -10,8 +10,10 @@ import UIKit
 
 class GameCell: UITableViewCell {
 
-  @IBOutlet weak var sportLabel: UILabel!
-  @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var sportLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var numCurrentLabel: UILabel!
+    @IBOutlet weak var numMaxLabel: UILabel!
   
     override func awakeFromNib() {
         super.awakeFromNib()

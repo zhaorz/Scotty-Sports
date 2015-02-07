@@ -10,4 +10,4 @@ import Foundation
 
 //Set up sample data
 
-let gamesData = [ Game(sport: "Football", location: "Gesling")]
+let gamesData = [ Game(sport: "Football", location: "Gesling", numCurrent: "3", numMax: "5")]

@@ -37,6 +37,8 @@ class GamesViewController: UITableViewController {
     let game = games[indexPath.row] as Game
     cell.sportLabel.text = game.sport
     cell.locationLabel.text = game.location
+    cell.numCurrentLabel.text = game.numCurrent
+    cell.numMaxLabel.text = game.numMax
     return cell
   }
 }
