@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //KYANGCOMMENT: below is syntax for adding a basic object
         var object = PFObject(className: "users")
         object.addObject("usernameHere", forKey: "derpz")
-        //object.saveInBackgroundWithTarget(nil , selector: nil)
+        object.saveInBackgroundWithTarget(nil , selector: nil)
         object.saveInBackgroundWithBlock { //this lets us do something once it finishes
             (success: Bool, error: NSError!) -> Void in
             if (success) {
