@@ -15,8 +15,9 @@ import QuartzCore
 
 let defaults = NSUserDefaults.standardUserDefaults()
 
-class ViewController: UIViewController, FBLoginViewDelegate {  
-    
+
+class ViewController: UIViewController, FBLoginViewDelegate, UIPickerViewDelegate{
+
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
 
