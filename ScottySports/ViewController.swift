@@ -60,6 +60,10 @@ var object1 = PFObject(className: "users")
 }
 
 //PAGE 3
+    
+    @IBAction func createNewGame(sender: AnyObject) {
+        //CREATES A NEW GAME
+    }
 
 
     override func viewDidLoad() {
