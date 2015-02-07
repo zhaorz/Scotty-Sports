@@ -11,14 +11,20 @@
 //
 
 import UIKit
+import QuartzCore
+
 
 
 class ViewController: UIViewController, FBLoginViewDelegate {
-//PAGE 3
+
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
 
-
+//PAGE 2
+    
+    
+        // Eric Page 2
+    
     @IBAction func Running(sender: AnyObject) {
     }
 
@@ -81,6 +87,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
     func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
         println("User Logged In")
         println("This is where you perform a segue.")
+
     }
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
