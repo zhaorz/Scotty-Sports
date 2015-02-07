@@ -176,14 +176,14 @@
                     <navigationItem key="navigationItem" title="Select Sports" id="1iA-Q6-BAd">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jzd-NS-rtO">
                             <connections>
-                                <action selector="createNewGame:" destination="r6d-mk-jNr" id="fzh-JI-OxD"/>
+                                <segue destination="E7o-qW-WHp" kind="modal" id="MOx-E6-RcT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV2-pn-bpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="191"/>
+            <point key="canvasLocation" x="1630" y="191"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="v1E-Ga-D4p">
@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg0-w6-EHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973" y="191"/>
+            <point key="canvasLocation" x="1553" y="883"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7hK-M2-Szg">

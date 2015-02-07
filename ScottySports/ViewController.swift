@@ -67,7 +67,7 @@ class ViewController: UIViewController, FBLoginViewDelegate, UIPickerViewDelegat
 
 
    //CREATE NEW GAME
-    sports = ["football", "soccer", "basektball", "frisbee", "squash", "running", "tennis", "baseball", "golf"]
+    //sports = ["football", "soccer", "basektball", "frisbee", "squash", "running", "tennis", "baseball", "golf"]
     
     
     
