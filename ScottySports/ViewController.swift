@@ -12,52 +12,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-//PAGE 1
-    
-    @IBOutlet weak var usernameInput: UITextField!
-    
-    @IBAction func submitUsername(sender: AnyObject) {
+class ViewController: UIViewController, FBLoginViewDelegate {
+//PAGE 3
+    // Facebook button object
+    @IBOutlet var fbLoginView : FBLoginView!
+
+
+    @IBAction func Running(sender: AnyObject) {
+    }
+
+    @IBAction func Tennis(sender: AnyObject) {
+    }
+
+    @IBAction func Baseball(sender: AnyObject) {
+    }
+
+    @IBAction func Squash(sender: AnyObject) {
         var object1 = PFObject(className: "users")
-        object1.addObject(usernameInput.text, forKey: "name")
+        object1.addObject("Squash", forKey: "ayy")
+        object1.saveInBackgroundWithTarget(nil , selector: nil)
+    }
+    
+    @IBAction func Frisbee(sender: AnyObject) {
+        var object1 = PFObject(className: "users")
+        object1.addObject("Frisbee", forKey: "ayy")
+        object1.saveInBackgroundWithTarget(nil , selector: nil)
+    }
+    
+    @IBAction func Basketball(sender: AnyObject) {
+        var object1 = PFObject(className: "users")
+        object1.addObject("Basketball", forKey: "ayy")
+        object1.saveInBackgroundWithTarget(nil , selector: nil)
+    }
+    
+    @IBAction func Football(sender: AnyObject) {
+    var object1 = PFObject(className: "users")
+        object1.addObject("Football", forKey: "ayy")
+        object1.saveInBackgroundWithTarget(nil , selector: nil)
+    }
+        
+    @IBAction func switcher(sender: AnyObject) {
+        var object1 = PFObject(className: "users")
+        object1.addObject("Soccer", forKey: "ayy")
         object1.saveInBackgroundWithTarget(nil , selector: nil)
 
     }
-//PAGE 2
-
-@IBAction func Running(sender: AnyObject) {
-}
-@IBAction func Tennis(sender: AnyObject) {
-}
-@IBAction func Baseball(sender: AnyObject) {
-}
-@IBAction func Squash(sender: AnyObject) {
-    var object1 = PFObject(className: "users")
-    object1.addObject("Squash", forKey: "ayy")
-    object1.saveInBackgroundWithTarget(nil , selector: nil)
-}
-@IBAction func Frisbee(sender: AnyObject) {
-    var object1 = PFObject(className: "users")
-    object1.addObject("Frisbee", forKey: "ayy")
-    object1.saveInBackgroundWithTarget(nil , selector: nil)
-}
-@IBAction func Basketball(sender: AnyObject) {
-    var object1 = PFObject(className: "users")
-    object1.addObject("Basketball", forKey: "ayy")
-    object1.saveInBackgroundWithTarget(nil , selector: nil)
-}
-@IBAction func Football(sender: AnyObject) {
-var object1 = PFObject(className: "users")
-    object1.addObject("Football", forKey: "ayy")
-    object1.saveInBackgroundWithTarget(nil , selector: nil)
-}
-    
-@IBAction func switcher(sender: AnyObject) {
-    var object1 = PFObject(className: "users")
-    object1.addObject("Soccer", forKey: "ayy")
-    object1.saveInBackgroundWithTarget(nil , selector: nil)
-
-}
 
 //PAGE 3
     
@@ -69,6 +68,30 @@ var object1 = PFObject(className: "users")
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Facebook login
+        self.fbLoginView.delegate = self
+        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
+
+    }
+    
+    // Facebook methods
+    
+    func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
+        println("User Logged In")
+        println("This is where you perform a segue.")
+    }
+    
+    func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
+        println("User Name: \(user.name)")
+    }
+    
+    func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
+        println("User Logged Out")
+    }
+    
+    func loginView(loginView : FBLoginView!, handleError:NSError) {
+        println("Error: \(handleError.localizedDescription)")
     }
 
     override func didReceiveMemoryWarning() {

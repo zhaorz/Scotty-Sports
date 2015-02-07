@@ -293,11 +293,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Username" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DiE-vG-dRv">
-                                <rect key="frame" x="238" y="203" width="125" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-YA-RsF">
                                 <rect key="frame" x="277" y="241" width="49" height="30"/>
                                 <state key="normal" title="Submit">
@@ -311,11 +306,21 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="qlo-ZX-mar"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-mM-aCN" customClass="FBLoginView">
+                                <rect key="frame" x="61" y="301" width="478" height="130"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WRz-mM-aCN" secondAttribute="trailing" constant="10" id="Odq-ca-oi3"/>
+                            <constraint firstItem="WRz-mM-aCN" firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="10" id="a8O-9G-ZMd"/>
+                            <constraint firstAttribute="centerY" secondItem="WRz-mM-aCN" secondAttribute="centerY" id="vfC-kW-bTz"/>
+                            <constraint firstAttribute="centerX" secondItem="WRz-mM-aCN" secondAttribute="centerX" id="wWa-a8-wV5"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="usernameInput" destination="DiE-vG-dRv" id="2Aa-q1-ceZ"/>
+                        <outlet property="fbLoginView" destination="WRz-mM-aCN" id="0rl-ZG-x1o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPH-Dl-4Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
