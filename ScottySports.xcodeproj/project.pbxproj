@@ -31,6 +31,7 @@
 		794ED5281A85BA4B00CA0DD9 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794ED40D1A85BA4A00CA0DD9 /* FBAudienceNetwork.README.txt */; };
 		794ED5291A85BA4B00CA0DD9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 794ED40E1A85BA4A00CA0DD9 /* LICENSE */; };
 		794ED52A1A85BA4B00CA0DD9 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794ED40F1A85BA4A00CA0DD9 /* README.txt */; };
+		BE86B82C1A8607DE00F5910A /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86B82B1A8607DE00F5910A /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		794ED40D1A85BA4A00CA0DD9 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
 		794ED40E1A85BA4A00CA0DD9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		794ED40F1A85BA4A00CA0DD9 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		BE86B82B1A8607DE00F5910A /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				794408001A859E7700C72509 /* ViewController.swift */,
+				BE86B82B1A8607DE00F5910A /* HelperFunctions.swift */,
 				794408021A859E7700C72509 /* Main.storyboard */,
 				794407FE1A859E7700C72509 /* AppDelegate.swift */,
 				794408051A859E7700C72509 /* Images.xcassets */,
@@ -322,6 +325,7 @@
 			files = (
 				794408011A859E7700C72509 /* ViewController.swift in Sources */,
 				794407FF1A859E7700C72509 /* AppDelegate.swift in Sources */,
+				BE86B82C1A8607DE00F5910A /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

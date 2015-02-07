@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //KYANGCOMMENT: below is syntax for adding a basic object
         
-        var object = PFObject(className: "users")
-        object.addObject("usernameHere", forKey: "usernames")
-        object.saveInBackgroundWithTarget(nil , selector: nil)
+        //var object = PFObject(className: "users")
+        //object.addObject("usernameHere", forKey: "usernames")
+        //object.saveInBackgroundWithTarget(nil , selector: nil)
         
         /*
         KYANGCOMMENT: below is syntax for getting the objectId right after saving

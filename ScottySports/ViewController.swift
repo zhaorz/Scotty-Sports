@@ -12,6 +12,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, FBLoginViewDelegate {
 //PAGE 3
     // Facebook button object
@@ -84,7 +85,67 @@ class ViewController: UIViewController, FBLoginViewDelegate {
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
         println("User Name: \(user.name)")
+        //println("User Link: \(user.link)")
+        storeUserDataOnServer(user.link)
     }
+    
+    func getIDFromURL(userURL: String) -> String {
+        let count = countElements(userURL)
+        var returnString: String = ""
+        var slashCount = 0
+        var newIndex: String.Index
+        for index in 0..<count {
+            newIndex = advance(userURL.startIndex, index)
+            if String(userURL[newIndex]) == "/" {
+                slashCount += 1
+            }
+            if slashCount == 4 {
+                returnString = userURL.substringFromIndex(newIndex)
+                break
+            }
+        }
+        println(returnString)
+        return returnString
+    }
+    
+    func findGames(sport: String) -> [String] {
+    //return list of gameIDs with selected sport
+        var gameIDList: [String] = []
+        var gameQuery = PFQuery(className: "games")
+        var tester: String
+        var dictionary: [String:String]
+        return gameIDList
+    }
+    
+    
+    func createAGame(sport: String, location: String, time: String, numberOfPlayers: Int) -> Void {
+        var newGame = PFObject(className: "games")
+        newGame["sport"] = sport
+        newGame["location"] = location
+        newGame["time"] = time
+        newGame["numberOfPlayers"] = numberOfPlayers
+        newGame.saveInBackgroundWithTarget(nil, selector: nil)
+    }
+    
+    func storeUserDataOnServer(userURL : String) {
+        let userID = getIDFromURL(userURL)
+        var query = PFQuery(className:"users")
+        query.getObjectInBackgroundWithId("yEBwUTeJD1") {
+            (gameScore: PFObject!, error: NSError!) -> Void in
+            if error != nil {
+                NSLog("%@", error)
+            } else {
+                gameScore["usernames"] = userID
+                for key in gameScore.dictionaryWithValuesForKeys(["usernames"]) {
+                    println(key.0)
+                }
+                gameScore.saveInBackgroundWithTarget(nil, selector: nil)
+            }
+        }
+        //findGames("Basketball")
+        //createAGame("Basketball",location: "Wiegand",time: "20:30",numberOfPlayers: 5)
+        }
+    
     
     func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
         println("User Logged Out")
