@@ -14,6 +14,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func Basketball(sender: AnyObject) {
+        var object = PFObject(className: "users")
+        object.addObject("usernameHere", forKey: "usernames")
+        object.saveInBackgroundWithTarget(nil , selector: nil)
+
+    }
+    @IBAction func Football(sender: AnyObject) {
+        var object = PFObject(className: "users")
+        object.addObject("usernameHere", forKey: "usernames")
+        object.saveInBackgroundWithTarget(nil , selector: nil)
+
+    }
     @IBAction func Soccer(sender: AnyObject) {
         var object1 = PFObject(className: "users")
         object1.addObject("usernameHere", forKey: "derpz")

@@ -17,16 +17,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jir-Yz-pkO">
-                                <rect key="frame" x="139" y="107" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="139" y="107" width="56" height="30"/>
+                                <state key="normal" title="Football">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Football:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aLw-U8-o4r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJJ-3v-vZF">
-                                <rect key="frame" x="277" y="107" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="277" y="107" width="72" height="30"/>
+                                <state key="normal" title="Basketball">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Basketball:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TXI-ir-HBu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-di-8DS">
                                 <rect key="frame" x="406" y="107" width="49" height="30"/>
