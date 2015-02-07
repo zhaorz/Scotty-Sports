@@ -18,7 +18,7 @@
                                 <items>
                                     <barButtonItem systemItem="add" id="FMT-g8-6xB">
                                         <connections>
-                                            <segue destination="bzk-XI-Wm1" kind="modal" id="Twp-jO-wUM"/>
+                                            <segue destination="iHl-kR-XZH" kind="modal" id="I2i-H1-dw7"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -38,30 +38,34 @@
             </objects>
             <point key="canvasLocation" x="732" y="191"/>
         </scene>
-        <!--New Game-->
-        <scene sceneID="CTz-rK-dCo">
+        <!--Create New Game-->
+        <scene sceneID="LHG-aS-1pZ">
             <objects>
-                <viewController id="BPQ-5a-GJC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9Hl-CI-rkc">
+                <viewController id="K43-vi-hwu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z3g-BJ-2K6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yzt-PR-QE3">
-                                <rect key="frame" x="97" y="269" width="126" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aOc-XX-rst">
+                                <rect key="frame" x="130" y="505" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create New Game">
-                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="E7o-qW-WHp" kind="modal" id="YdN-3o-ak5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Game" id="sQE-Qh-D2X"/>
+                    <navigationItem key="navigationItem" title="Create New Game" id="9kW-Y7-9fC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1w-VW-s6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCs-tv-tIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="883"/>
+            <point key="canvasLocation" x="1158" y="881"/>
         </scene>
         <!--Select Sports-->
         <scene sceneID="rhW-qZ-622">
@@ -186,39 +190,6 @@
             <point key="canvasLocation" x="1630" y="191"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="v1E-Ga-D4p">
-            <objects>
-                <viewController id="FH3-dw-zzV" customClass="ViewController" customModule="ScottySports" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QWt-K5-Z7k">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RdW-eq-40E">
-                                <rect key="frame" x="125" y="75" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" id="lrv-tw-i6x">
-                                <rect key="frame" x="0.0" y="104" width="320" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="FH3-dw-zzV" id="KkC-6C-oaE"/>
-                                </connections>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="selectSport" destination="lrv-tw-i6x" id="cXS-OE-TXr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wg0-w6-EHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1553" y="883"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="7hK-M2-Szg">
             <objects>
                 <viewController id="3do-fQ-qTb" customClass="ViewController" customModule="ScottySports" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,22 +258,22 @@
             <point key="canvasLocation" x="1158" y="191"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="qjY-Ht-xaH">
+        <scene sceneID="Du1-qH-qlM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bzk-XI-Wm1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iHl-kR-XZH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="37g-8e-7hl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oZZ-n4-aqq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BPQ-5a-GJC" kind="relationship" relationship="rootViewController" id="a2K-Cr-ZUc"/>
+                        <segue destination="K43-vi-hwu" kind="relationship" relationship="rootViewController" id="i0t-W6-9Sr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pVS-A4-F1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pos-TU-QF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="883"/>
+            <point key="canvasLocation" x="732" y="881"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -311,7 +282,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MOx-E6-RcT"/>
+        <segue reference="YdN-3o-ak5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
