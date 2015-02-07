@@ -383,7 +383,7 @@
                     </view>
                     <connections>
                         <outlet property="fbLoginView" destination="WRz-mM-aCN" id="0rl-ZG-x1o"/>
-                        <segue destination="kP8-JV-NAC" kind="presentation" identifier="segue" id="1SY-vk-Wej"/>
+                        <segue destination="kP8-JV-NAC" kind="presentation" identifier="loginSegue" id="1SY-vk-Wej"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPH-Dl-4Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
