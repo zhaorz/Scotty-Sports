@@ -15,7 +15,7 @@ import QuartzCore
 
 
 
-class ViewController: UIViewController, FBLoginViewDelegate {
+class ViewController: UIViewController, FBLoginViewDelegate {  
 
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
