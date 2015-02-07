@@ -14,11 +14,17 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    //hello
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        Parse.setApplicationId("A7oc3dFefYXiqL1j3k31GdcUDujbrddA43Z4BKF9", clientKey: "pjY9FAF9HhoXc0iJwHfhlB9jwuCrp28SXZxAXlL6")
+        
+        //KYANGCOMMENT: below is syntax for adding a basic object
+        //var object = PFObject(className: "users")
+        //object.addObject("usernameHere", forKey: "derpz")
+        //object.saveInBackgroundWithTarget(nil , selector: nil)
+        
         // Override point for customization after application launch.
         return true
     }
