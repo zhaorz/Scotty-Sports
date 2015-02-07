@@ -2,7 +2,11 @@
 //  AppDelegate.swift
 //  ScottySports
 //
-//  Created by Richard Zhao on 2/6/15.
+//  Eric Lee
+//  Christina Yuan
+//  Kevin Yang
+//  Richard Zhao
+//
 //  Copyright (c) 2015 KIRK. All rights reserved.
 //
 
