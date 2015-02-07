@@ -65,11 +65,15 @@ class ViewController: UIViewController, FBLoginViewDelegate {
 
     }
 
-//PAGE 3
+
+   //CREATE NEW GAME
+    //sports = ["football", "soccer", "basektball", "frisbee", "squash", "running", "tennis", "baseball", "golf"]
     
-    @IBAction func createNewGame(sender: AnyObject) {
-        //CREATES A NEW GAME
-    }
+    
+    
+    
+    
+    // Facebook methods
 
 
     override func viewDidLoad() {
@@ -81,11 +85,11 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
 
     }
-    
-    // Facebook methods
+
     
     func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
         println("User Logged In")
+        performSegueWithIdentifier("loginSegue", sender: self)
         println("This is where you perform a segue.")
 
     }
