@@ -99,19 +99,7 @@
 		794407F01A859E7700C72509 = {
 			isa = PBXGroup;
 			children = (
-				794ED2101A85B71000CA0DD9 /* Bolts.framework */,
-				794ED2111A85B71000CA0DD9 /* Parse.framework */,
-				495D75DC1A85B340007EF854 /* libsqlite3.dylib */,
-				495D75DA1A85B317007EF854 /* SystemConfiguration.framework */,
-				495D75D81A85B311007EF854 /* StoreKit.framework */,
-				495D75D61A85B306007EF854 /* Security.framework */,
-				495D75D41A85B2FF007EF854 /* QuartzCore.framework */,
-				495D75D21A85B2F9007EF854 /* MobileCoreServices.framework */,
-				495D75D01A85B2F1007EF854 /* libz.dylib */,
-				495D75CE1A85B2E8007EF854 /* CoreLocation.framework */,
-				495D75CC1A85B2E0007EF854 /* CoreGraphics.framework */,
-				495D75CA1A85B2D7007EF854 /* CFNetwork.framework */,
-				495D75C81A85B2D0007EF854 /* AudioToolbox.framework */,
+				794ED4071A85B9EB00CA0DD9 /* Frameworks */,
 				794407FB1A859E7700C72509 /* ScottySports */,
 				794408111A859E7700C72509 /* ScottySportsTests */,
 				794407FA1A859E7700C72509 /* Products */,
@@ -164,6 +152,34 @@
 				794408131A859E7700C72509 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		794ED4071A85B9EB00CA0DD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				794ED4081A85BA0B00CA0DD9 /* Parse */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		794ED4081A85BA0B00CA0DD9 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				794ED2101A85B71000CA0DD9 /* Bolts.framework */,
+				794ED2111A85B71000CA0DD9 /* Parse.framework */,
+				495D75DC1A85B340007EF854 /* libsqlite3.dylib */,
+				495D75DA1A85B317007EF854 /* SystemConfiguration.framework */,
+				495D75D81A85B311007EF854 /* StoreKit.framework */,
+				495D75D61A85B306007EF854 /* Security.framework */,
+				495D75D41A85B2FF007EF854 /* QuartzCore.framework */,
+				495D75D21A85B2F9007EF854 /* MobileCoreServices.framework */,
+				495D75D01A85B2F1007EF854 /* libz.dylib */,
+				495D75CE1A85B2E8007EF854 /* CoreLocation.framework */,
+				495D75CC1A85B2E0007EF854 /* CoreGraphics.framework */,
+				495D75CA1A85B2D7007EF854 /* CFNetwork.framework */,
+				495D75C81A85B2D0007EF854 /* AudioToolbox.framework */,
+			);
+			name = Parse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
