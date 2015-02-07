@@ -294,17 +294,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-mM-aCN" customClass="FBLoginView">
-                                <rect key="frame" x="61" y="321" width="478" height="130"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CMU logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="cUA-In-vL5">
+                                <rect key="frame" x="182" y="545" width="237" height="35"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-mM-aCN" customClass="FBLoginView">
+                                <rect key="frame" x="61" y="397" width="478" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scotty Sports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa1-iz-dKN">
+                                <rect key="frame" x="189" y="261" width="222" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="Mhi-Of-wZf"/>
+                                    <constraint firstAttribute="height" constant="44" id="zab-ar-ilm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.71372549019607845" green="0.035294117647058823" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="WRz-mM-aCN" secondAttribute="centerX" id="0mA-th-XSj"/>
+                            <constraint firstItem="pa1-iz-dKN" firstAttribute="top" secondItem="fZt-PM-FIC" secondAttribute="bottom" constant="241" id="4oa-b0-1Gp"/>
+                            <constraint firstItem="WRz-mM-aCN" firstAttribute="top" secondItem="pa1-iz-dKN" secondAttribute="bottom" constant="92" id="5GL-zl-qlO"/>
+                            <constraint firstAttribute="centerY" secondItem="cUA-In-vL5" secondAttribute="centerY" constant="-262.5" id="5pC-lg-gHp"/>
+                            <constraint firstItem="pa1-iz-dKN" firstAttribute="centerX" secondItem="WRz-mM-aCN" secondAttribute="centerX" id="9M3-NB-xjL"/>
+                            <constraint firstAttribute="centerX" secondItem="cUA-In-vL5" secondAttribute="centerX" id="Hdm-Ts-m7V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cUA-In-vL5" secondAttribute="trailing" constant="70" id="OUi-pG-tsr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WRz-mM-aCN" secondAttribute="trailing" constant="10" id="Odq-ca-oi3"/>
+                            <constraint firstItem="cUA-In-vL5" firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="70" id="SXQ-xT-fky"/>
                             <constraint firstItem="WRz-mM-aCN" firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="10" id="a8O-9G-ZMd"/>
-                            <constraint firstAttribute="centerY" secondItem="WRz-mM-aCN" secondAttribute="centerY" id="vfC-kW-bTz"/>
-                            <constraint firstAttribute="centerX" secondItem="WRz-mM-aCN" secondAttribute="centerX" id="wWa-a8-wV5"/>
+                            <constraint firstAttribute="centerY" secondItem="WRz-mM-aCN" secondAttribute="centerY" constant="-100" id="foP-ug-QCq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -316,5 +336,8 @@
             <point key="canvasLocation" x="372" y="151"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CMU logo.png" width="1512" height="136"/>
+    </resources>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

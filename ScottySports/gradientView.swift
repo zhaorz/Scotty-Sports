@@ -2,7 +2,6 @@
 //  gradientView.swift
 //  ScottySports
 //
-//  Created by Richard Zhao on 2/7/15.
 //  Copyright (c) 2015 KIRK. All rights reserved.
 //
 
