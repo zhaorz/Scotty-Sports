@@ -16,17 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jir-Yz-pkO">
-                                <rect key="frame" x="139" y="107" width="56" height="30"/>
-                                <state key="normal" title="Football">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Football:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aLw-U8-o4r"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJJ-3v-vZF">
-                                <rect key="frame" x="277" y="107" width="72" height="30"/>
+                                <rect key="frame" x="51" y="215" width="72" height="30"/>
                                 <state key="normal" title="Basketball">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,12 +26,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-di-8DS">
-                                <rect key="frame" x="406" y="107" width="49" height="30"/>
+                                <rect key="frame" x="51" y="142" width="49" height="30"/>
                                 <state key="normal" title="Soccer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="Soccer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dXS-9j-Wm1"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WEZ-2R-AVF">
+                                <rect key="frame" x="127" y="145" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switcher:" destination="vXZ-lx-hvc" eventType="valueChanged" id="fsC-cx-MDp"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="snE-NE-RKz">
+                                <rect key="frame" x="131" y="215" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7c8-E2-VXG">
+                                <rect key="frame" x="127" y="90" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jir-Yz-pkO">
+                                <rect key="frame" x="51" y="83" width="56" height="30"/>
+                                <state key="normal" title="Football">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Football:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aLw-U8-o4r"/>
                                 </connections>
                             </button>
                         </subviews>
