@@ -14,7 +14,6 @@ import UIKit
 
 class ViewController: UIViewController, FBLoginViewDelegate {
 //PAGE 3
-    
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
 

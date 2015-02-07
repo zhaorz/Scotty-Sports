@@ -44,12 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         */
         
-        /* TODO: kevin check the open paren
-        var query = PFQuery(className: "users")
-        query.getObjectInBackgroundWithId("II0mOILf8w") {
-            (
-        }
-        */
+
         
         // Override point for customization after application launch.
         
