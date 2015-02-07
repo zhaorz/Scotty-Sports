@@ -44,13 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         */
         
-        var query = PFQuery(className: "users")
-        query.getObjectInBackgroundWithId("II0mOILf8w") {
-            (
+        //var query = PFQuery(className: "users")
+        //query.getObjectInBackgroundWithId("II0mOILf8w") {
+          //  (
         }
         
         // Override point for customization after application launch.
-        return true
+        //return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
