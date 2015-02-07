@@ -13,7 +13,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-//PAGE 3
+//PAGE 1
     
     @IBOutlet weak var usernameInput: UITextField!
     
