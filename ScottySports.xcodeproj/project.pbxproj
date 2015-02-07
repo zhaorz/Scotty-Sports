@@ -24,8 +24,13 @@
 		794408061A859E7700C72509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794408051A859E7700C72509 /* Images.xcassets */; };
 		794408091A859E7700C72509 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794408071A859E7700C72509 /* LaunchScreen.xib */; };
 		794408151A859E7700C72509 /* ScottySportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794408141A859E7700C72509 /* ScottySportsTests.swift */; };
-		794ED2121A85B71000CA0DD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794ED2101A85B71000CA0DD9 /* Bolts.framework */; };
 		794ED2131A85B71000CA0DD9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794ED2111A85B71000CA0DD9 /* Parse.framework */; };
+		794ED5251A85BA4A00CA0DD9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794ED40A1A85BA4A00CA0DD9 /* Bolts.framework */; };
+		794ED5261A85BA4A00CA0DD9 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794ED40B1A85BA4A00CA0DD9 /* FacebookSDK.framework */; };
+		794ED5271A85BA4A00CA0DD9 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794ED40C1A85BA4A00CA0DD9 /* FBAudienceNetwork.framework */; };
+		794ED5281A85BA4B00CA0DD9 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794ED40D1A85BA4A00CA0DD9 /* FBAudienceNetwork.README.txt */; };
+		794ED5291A85BA4B00CA0DD9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 794ED40E1A85BA4A00CA0DD9 /* LICENSE */; };
+		794ED52A1A85BA4B00CA0DD9 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 794ED40F1A85BA4A00CA0DD9 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +66,13 @@
 		7944080E1A859E7700C72509 /* ScottySportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottySportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		794408131A859E7700C72509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794408141A859E7700C72509 /* ScottySportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottySportsTests.swift; sourceTree = "<group>"; };
-		794ED2101A85B71000CA0DD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		794ED2111A85B71000CA0DD9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		794ED40A1A85BA4A00CA0DD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		794ED40B1A85BA4A00CA0DD9 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		794ED40C1A85BA4A00CA0DD9 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		794ED40D1A85BA4A00CA0DD9 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
+		794ED40E1A85BA4A00CA0DD9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		794ED40F1A85BA4A00CA0DD9 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +87,14 @@
 				794ED2131A85B71000CA0DD9 /* Parse.framework in Frameworks */,
 				495D75D51A85B2FF007EF854 /* QuartzCore.framework in Frameworks */,
 				495D75D31A85B2F9007EF854 /* MobileCoreServices.framework in Frameworks */,
+				794ED5271A85BA4A00CA0DD9 /* FBAudienceNetwork.framework in Frameworks */,
 				495D75D11A85B2F1007EF854 /* libz.dylib in Frameworks */,
 				495D75CF1A85B2E8007EF854 /* CoreLocation.framework in Frameworks */,
 				495D75CD1A85B2E0007EF854 /* CoreGraphics.framework in Frameworks */,
 				495D75CB1A85B2D7007EF854 /* CFNetwork.framework in Frameworks */,
+				794ED5261A85BA4A00CA0DD9 /* FacebookSDK.framework in Frameworks */,
 				495D75C91A85B2D0007EF854 /* AudioToolbox.framework in Frameworks */,
-				794ED2121A85B71000CA0DD9 /* Bolts.framework in Frameworks */,
+				794ED5251A85BA4A00CA0DD9 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +169,7 @@
 		794ED4071A85B9EB00CA0DD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				794ED4091A85BA4A00CA0DD9 /* FacebookSDK */,
 				794ED4081A85BA0B00CA0DD9 /* Parse */,
 			);
 			name = Frameworks;
@@ -165,7 +178,6 @@
 		794ED4081A85BA0B00CA0DD9 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				794ED2101A85B71000CA0DD9 /* Bolts.framework */,
 				794ED2111A85B71000CA0DD9 /* Parse.framework */,
 				495D75DC1A85B340007EF854 /* libsqlite3.dylib */,
 				495D75DA1A85B317007EF854 /* SystemConfiguration.framework */,
@@ -180,6 +192,19 @@
 				495D75C81A85B2D0007EF854 /* AudioToolbox.framework */,
 			);
 			name = Parse;
+			sourceTree = "<group>";
+		};
+		794ED4091A85BA4A00CA0DD9 /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				794ED40A1A85BA4A00CA0DD9 /* Bolts.framework */,
+				794ED40B1A85BA4A00CA0DD9 /* FacebookSDK.framework */,
+				794ED40C1A85BA4A00CA0DD9 /* FBAudienceNetwork.framework */,
+				794ED40D1A85BA4A00CA0DD9 /* FBAudienceNetwork.README.txt */,
+				794ED40E1A85BA4A00CA0DD9 /* LICENSE */,
+				794ED40F1A85BA4A00CA0DD9 /* README.txt */,
+			);
+			path = FacebookSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +270,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = 794407F01A859E7700C72509;
 			productRefGroup = 794407FA1A859E7700C72509 /* Products */;
@@ -264,7 +290,10 @@
 			files = (
 				794408041A859E7700C72509 /* Main.storyboard in Resources */,
 				794408091A859E7700C72509 /* LaunchScreen.xib in Resources */,
+				794ED5281A85BA4B00CA0DD9 /* FBAudienceNetwork.README.txt in Resources */,
 				794408061A859E7700C72509 /* Images.xcassets in Resources */,
+				794ED52A1A85BA4B00CA0DD9 /* README.txt in Resources */,
+				794ED5291A85BA4B00CA0DD9 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +440,7 @@
 					"$(inherited)",
 					"/afs/andrew.cmu.edu/usr11/kzy/Downloads/parse-starter-project-1.6.2/ParseSwiftStarterProject",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = ScottySports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -429,6 +459,7 @@
 					"$(inherited)",
 					"/afs/andrew.cmu.edu/usr11/kzy/Downloads/parse-starter-project-1.6.2/ParseSwiftStarterProject",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FacebookSDK",
 				);
 				INFOPLIST_FILE = ScottySports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
