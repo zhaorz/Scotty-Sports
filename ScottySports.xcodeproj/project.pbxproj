@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		794407FF1A859E7700C72509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794407FE1A859E7700C72509 /* AppDelegate.swift */; };
+		794408011A859E7700C72509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794408001A859E7700C72509 /* ViewController.swift */; };
+		794408041A859E7700C72509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794408021A859E7700C72509 /* Main.storyboard */; };
+		794408061A859E7700C72509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794408051A859E7700C72509 /* Images.xcassets */; };
+		794408091A859E7700C72509 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794408071A859E7700C72509 /* LaunchScreen.xib */; };
+		794408151A859E7700C72509 /* ScottySportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794408141A859E7700C72509 /* ScottySportsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7944080F1A859E7700C72509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 794407F11A859E7700C72509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794407F81A859E7700C72509;
+			remoteInfo = ScottySports;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		794407F91A859E7700C72509 /* ScottySports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScottySports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794407FD1A859E7700C72509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794407FE1A859E7700C72509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		794408001A859E7700C72509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		794408031A859E7700C72509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		794408051A859E7700C72509 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		794408081A859E7700C72509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7944080E1A859E7700C72509 /* ScottySportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottySportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		794408131A859E7700C72509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794408141A859E7700C72509 /* ScottySportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottySportsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		794407F61A859E7700C72509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944080B1A859E7700C72509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794407F01A859E7700C72509 = {
+			isa = PBXGroup;
+			children = (
+				794407FB1A859E7700C72509 /* ScottySports */,
+				794408111A859E7700C72509 /* ScottySportsTests */,
+				794407FA1A859E7700C72509 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		794407FA1A859E7700C72509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				794407F91A859E7700C72509 /* ScottySports.app */,
+				7944080E1A859E7700C72509 /* ScottySportsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		794407FB1A859E7700C72509 /* ScottySports */ = {
+			isa = PBXGroup;
+			children = (
+				794407FE1A859E7700C72509 /* AppDelegate.swift */,
+				794408001A859E7700C72509 /* ViewController.swift */,
+				794408021A859E7700C72509 /* Main.storyboard */,
+				794408051A859E7700C72509 /* Images.xcassets */,
+				794408071A859E7700C72509 /* LaunchScreen.xib */,
+				794407FC1A859E7700C72509 /* Supporting Files */,
+			);
+			path = ScottySports;
+			sourceTree = "<group>";
+		};
+		794407FC1A859E7700C72509 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				794407FD1A859E7700C72509 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		794408111A859E7700C72509 /* ScottySportsTests */ = {
+			isa = PBXGroup;
+			children = (
+				794408141A859E7700C72509 /* ScottySportsTests.swift */,
+				794408121A859E7700C72509 /* Supporting Files */,
+			);
+			path = ScottySportsTests;
+			sourceTree = "<group>";
+		};
+		794408121A859E7700C72509 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				794408131A859E7700C72509 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		794407F81A859E7700C72509 /* ScottySports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794408181A859E7700C72509 /* Build configuration list for PBXNativeTarget "ScottySports" */;
+			buildPhases = (
+				794407F51A859E7700C72509 /* Sources */,
+				794407F61A859E7700C72509 /* Frameworks */,
+				794407F71A859E7700C72509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScottySports;
+			productName = ScottySports;
+			productReference = 794407F91A859E7700C72509 /* ScottySports.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7944080D1A859E7700C72509 /* ScottySportsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7944081B1A859E7700C72509 /* Build configuration list for PBXNativeTarget "ScottySportsTests" */;
+			buildPhases = (
+				7944080A1A859E7700C72509 /* Sources */,
+				7944080B1A859E7700C72509 /* Frameworks */,
+				7944080C1A859E7700C72509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				794408101A859E7700C72509 /* PBXTargetDependency */,
+			);
+			name = ScottySportsTests;
+			productName = ScottySportsTests;
+			productReference = 7944080E1A859E7700C72509 /* ScottySportsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794407F11A859E7700C72509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = KIRK;
+				TargetAttributes = {
+					794407F81A859E7700C72509 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7944080D1A859E7700C72509 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 794407F81A859E7700C72509;
+					};
+				};
+			};
+			buildConfigurationList = 794407F41A859E7700C72509 /* Build configuration list for PBXProject "ScottySports" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 794407F01A859E7700C72509;
+			productRefGroup = 794407FA1A859E7700C72509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				794407F81A859E7700C72509 /* ScottySports */,
+				7944080D1A859E7700C72509 /* ScottySportsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		794407F71A859E7700C72509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794408041A859E7700C72509 /* Main.storyboard in Resources */,
+				794408091A859E7700C72509 /* LaunchScreen.xib in Resources */,
+				794408061A859E7700C72509 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944080C1A859E7700C72509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794407F51A859E7700C72509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794408011A859E7700C72509 /* ViewController.swift in Sources */,
+				794407FF1A859E7700C72509 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7944080A1A859E7700C72509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794408151A859E7700C72509 /* ScottySportsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		794408101A859E7700C72509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794407F81A859E7700C72509 /* ScottySports */;
+			targetProxy = 7944080F1A859E7700C72509 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		794408021A859E7700C72509 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794408031A859E7700C72509 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		794408071A859E7700C72509 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794408081A859E7700C72509 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		794408161A859E7700C72509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		794408171A859E7700C72509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		794408191A859E7700C72509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScottySports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7944081A1A859E7700C72509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScottySports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7944081C1A859E7700C72509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScottySportsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScottySports.app/ScottySports";
+			};
+			name = Debug;
+		};
+		7944081D1A859E7700C72509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScottySportsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScottySports.app/ScottySports";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		794407F41A859E7700C72509 /* Build configuration list for PBXProject "ScottySports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794408161A859E7700C72509 /* Debug */,
+				794408171A859E7700C72509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794408181A859E7700C72509 /* Build configuration list for PBXNativeTarget "ScottySports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794408191A859E7700C72509 /* Debug */,
+				7944081A1A859E7700C72509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7944081B1A859E7700C72509 /* Build configuration list for PBXNativeTarget "ScottySportsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7944081C1A859E7700C72509 /* Debug */,
+				7944081D1A859E7700C72509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 794407F11A859E7700C72509 /* Project object */;
+}
