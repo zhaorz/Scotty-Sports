@@ -23,9 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //KYANGCOMMENT: below is syntax for adding a basic object
         
         var object = PFObject(className: "users")
-        object.addObject("usernameHere", forKey: "derpz")
+        object.addObject("usernameHere", forKey: "usernames")
         object.saveInBackgroundWithTarget(nil , selector: nil)
-        object.saveInBackgroundWithBlock { //this lets us do something once it finishes
+        
+        /*
+        KYANGCOMMENT: below is syntax for getting the objectId right after saving
+        Later, we want to store this id in NSUserDefaults (local storage)
+        For now, if you want a specific id, look at our parse webpage
+        
+        var object1 = PFObject(className: "users")
+        object.saveInBackgroundWithBlock { //lets us do something once it finishes background task
             (success: Bool, error: NSError!) -> Void in
             if (success) {
                 let objectId = object.objectId
