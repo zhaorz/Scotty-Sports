@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -360,7 +361,7 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="qlo-ZX-mar"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-mM-aCN" customClass="FBLoginView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-mM-aCN" customClass="FBLoginView">
                                 <rect key="frame" x="61" y="301" width="478" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -380,12 +381,12 @@
                             <constraint firstAttribute="centerX" secondItem="WRz-mM-aCN" secondAttribute="centerX" id="0mA-th-XSj"/>
                             <constraint firstItem="pa1-iz-dKN" firstAttribute="top" secondItem="fZt-PM-FIC" secondAttribute="bottom" constant="241" id="4oa-b0-1Gp"/>
                             <constraint firstItem="WRz-mM-aCN" firstAttribute="top" secondItem="pa1-iz-dKN" secondAttribute="bottom" constant="92" id="5GL-zl-qlO"/>
-                            <constraint firstAttribute="centerY" secondItem="cUA-In-vL5" secondAttribute="centerY" constant="-262.5" id="5pC-lg-gHp"/>
+                            <constraint firstAttribute="centerY" secondAttribute="centerY" constant="-262.5" id="5pC-lg-gHp"/>
                             <constraint firstItem="pa1-iz-dKN" firstAttribute="centerX" secondItem="WRz-mM-aCN" secondAttribute="centerX" id="9M3-NB-xjL"/>
-                            <constraint firstAttribute="centerX" secondItem="cUA-In-vL5" secondAttribute="centerX" id="Hdm-Ts-m7V"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cUA-In-vL5" secondAttribute="trailing" constant="70" id="OUi-pG-tsr"/>
+                            <constraint firstAttribute="centerX" secondAttribute="centerX" id="Hdm-Ts-m7V"/>
+                            <constraint firstAttribute="trailingMargin" secondAttribute="trailing" constant="70" id="OUi-pG-tsr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WRz-mM-aCN" secondAttribute="trailing" constant="10" id="Odq-ca-oi3"/>
-                            <constraint firstItem="cUA-In-vL5" firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="70" id="SXQ-xT-fky"/>
+                            <constraint firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="70" id="SXQ-xT-fky"/>
                             <constraint firstItem="WRz-mM-aCN" firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="10" id="a8O-9G-ZMd"/>
                             <constraint firstAttribute="centerY" secondItem="WRz-mM-aCN" secondAttribute="centerY" constant="-100" id="foP-ug-QCq"/>
                         </constraints>
@@ -400,8 +401,5 @@
             <point key="canvasLocation" x="-341" y="202"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="CMU logo.png" width="1512" height="136"/>
-    </resources>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
