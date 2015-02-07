@@ -362,6 +362,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-mM-aCN" customClass="FBLoginView">
+
                                 <rect key="frame" x="61" y="301" width="478" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
