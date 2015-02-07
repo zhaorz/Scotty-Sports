@@ -15,7 +15,7 @@ import QuartzCore
 
 
 
-class ViewController: UIViewController, FBLoginViewDelegate {  
+class ViewController: UIViewController, FBLoginViewDelegate, UIPickerViewDelegate{
 
     // Facebook button object
     @IBOutlet var fbLoginView : FBLoginView!
@@ -65,11 +65,15 @@ class ViewController: UIViewController, FBLoginViewDelegate {
 
     }
 
-//PAGE 3
+
+   //CREATE NEW GAME
+    sports = ["football", "soccer", "basektball", "frisbee", "squash", "running", "tennis", "baseball", "golf"]
     
-    @IBAction func createNewGame(sender: AnyObject) {
-        //CREATES A NEW GAME
-    }
+    
+    
+    
+    
+    // Facebook methods
 
 
     override func viewDidLoad() {
@@ -81,19 +85,47 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
 
     }
-    
-    // Facebook methods
+
     
     func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
         println("User Logged In")
-        
+        performSegueWithIdentifier("loginSegue", sender: self)
+        println("This is where you perform a segue.")
+
     }
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
         println("User Name: \(user.name)")
-        println("link: \(user.link)")
-        performSegueWithIdentifier("segue1-2", sender: self)
-        
+        //println("User Link: \(user.link)")
+        storeUserDataOnServer(user.link)
+    }
+    
+    func getIDFromURL(userURL: String) -> String {
+        let count = countElements(userURL)
+        var returnString: String = ""
+        var slashCount = 0
+        var newIndex: String.Index
+        for index in 0..<count {
+            newIndex = advance(userURL.startIndex, index)
+            if String(userURL[newIndex]) == "/" {
+                slashCount += 1
+            }
+            if slashCount == 4 {
+                returnString = userURL.substringFromIndex(newIndex)
+                break
+            }
+        }
+        println(returnString)
+        return returnString
+    }
+    
+    func findGames(sport: String) -> [String] {
+    //return list of gameIDs with selected sport
+        var gameIDList: [String] = []
+        var gameQuery = PFQuery(className: "games")
+        var tester: String
+        var dictionary: [String:String]
+        return gameIDList
     }
     
     
