@@ -59,6 +59,10 @@ class ViewController: UIViewController, FBLoginViewDelegate {
     }
 
 //PAGE 3
+    
+    @IBAction func createNewGame(sender: AnyObject) {
+        //CREATES A NEW GAME
+    }
 
 
     override func viewDidLoad() {
