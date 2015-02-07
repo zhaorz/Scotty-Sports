@@ -290,7 +290,7 @@
                         <viewControllerLayoutGuide type="top" id="fZt-PM-FIC"/>
                         <viewControllerLayoutGuide type="bottom" id="55s-NQ-69J"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PkP-9T-cgb">
+                    <view key="view" contentMode="scaleToFill" id="PkP-9T-cgb" customClass="gradientView" customModule="ScottySports" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -299,7 +299,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="WRz-mM-aCN" secondAttribute="trailing" constant="10" id="Odq-ca-oi3"/>
                             <constraint firstItem="WRz-mM-aCN" firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="10" id="a8O-9G-ZMd"/>

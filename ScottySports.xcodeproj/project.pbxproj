@@ -19,6 +19,7 @@
 		495D75DB1A85B317007EF854 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495D75DA1A85B317007EF854 /* SystemConfiguration.framework */; };
 		495D75DD1A85B340007EF854 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 495D75DC1A85B340007EF854 /* libsqlite3.dylib */; };
 		7926DA671A860335009FABF9 /* CMU logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7926DA661A860335009FABF9 /* CMU logo.png */; };
+		7926DA691A860BFB009FABF9 /* gradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926DA681A860BFB009FABF9 /* gradientView.swift */; };
 		794407FF1A859E7700C72509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794407FE1A859E7700C72509 /* AppDelegate.swift */; };
 		794408011A859E7700C72509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794408001A859E7700C72509 /* ViewController.swift */; };
 		794408041A859E7700C72509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794408021A859E7700C72509 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		495D75DC1A85B340007EF854 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		495D75E21A85B40B007EF854 /* ScottySports-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScottySports-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		7926DA661A860335009FABF9 /* CMU logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CMU logo.png"; sourceTree = "<group>"; };
+		7926DA681A860BFB009FABF9 /* gradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gradientView.swift; sourceTree = "<group>"; };
 		794407F91A859E7700C72509 /* ScottySports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScottySports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794407FD1A859E7700C72509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794407FE1A859E7700C72509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				794408001A859E7700C72509 /* ViewController.swift */,
+				7926DA681A860BFB009FABF9 /* gradientView.swift */,
 				794408021A859E7700C72509 /* Main.storyboard */,
 				794407FE1A859E7700C72509 /* AppDelegate.swift */,
 				794408051A859E7700C72509 /* Images.xcassets */,
@@ -326,6 +329,7 @@
 			files = (
 				794408011A859E7700C72509 /* ViewController.swift in Sources */,
 				794407FF1A859E7700C72509 /* AppDelegate.swift in Sources */,
+				7926DA691A860BFB009FABF9 /* gradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

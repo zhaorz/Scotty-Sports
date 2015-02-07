@@ -11,6 +11,8 @@
 //
 
 import UIKit
+import QuartzCore
+
 
 class ViewController: UIViewController, FBLoginViewDelegate {
 //PAGE 3
