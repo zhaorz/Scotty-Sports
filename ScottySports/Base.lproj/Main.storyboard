@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3do-fQ-qTb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -223,13 +224,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRz-mM-aCN" customClass="FBLoginView">
+                                <rect key="frame" x="61" y="301" width="478" height="130"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WRz-mM-aCN" secondAttribute="trailing" constant="10" id="Odq-ca-oi3"/>
+                            <constraint firstItem="WRz-mM-aCN" firstAttribute="leading" secondItem="PkP-9T-cgb" secondAttribute="leadingMargin" constant="10" id="a8O-9G-ZMd"/>
+                            <constraint firstAttribute="centerY" secondItem="WRz-mM-aCN" secondAttribute="centerY" id="vfC-kW-bTz"/>
+                            <constraint firstAttribute="centerX" secondItem="WRz-mM-aCN" secondAttribute="centerX" id="wWa-a8-wV5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPH-Dl-4Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="165"/>
+            <point key="canvasLocation" x="308" y="180"/>
         </scene>
     </scenes>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
